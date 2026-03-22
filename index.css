@@ -1,0 +1,213 @@
+
+:root {
+    --primary-color: #245fd5;
+    --dark-bg: #1e293b;
+    --light-bg: #f6f7f8;
+    --text-main: #334155;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-main);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Header Section */
+header {
+    background-color: var(--dark-bg);
+    color: var(--white);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+.connection-links {
+    display: flex;              
+    justify-content: center;   
+    gap: 25px;                  
+    margin-top: 20px; }
+
+.glyphicon-home {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.glyphicon-home::before {
+    content: "🏠";
+    margin-right: 0.5rem;
+}
+
+    /* Box style for specific links */
+
+#Academic:hover 
+{
+    color: blue;
+    background-color: lightgrey;      
+    transform: translateY(-2px);    
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+#Experiences:hover
+{
+    color: blue;
+    background-color: lightgrey;   
+     transform: translateY(-2px);    
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+#Personal:hover
+{
+    color: blue;
+    background-color: lightgrey;   
+     transform: translateY(-2px);    
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+}
+.connection-links
+{
+    display: flex;      
+    justify-content: center;    
+    padding: 10px 20px;             
+    background-color: #cbcad7;     
+    color: white;                   
+    border-radius: 8px;       
+    text-decoration: none;      
+    font-weight: 500;
+    transition: all 0.3s ease; 
+    align-items: center;    
+}
+.connection-links:hover 
+{
+    color: blue;     
+    transform: translateY(-2px);    
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    
+}
+.connection-links{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4C8CE4;
+     background: var(--grey);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    text-indent: .9rem;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.connection-links{
+    animation-fill-mode: forwards;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    margin-top: 0.5rem;
+}
+
+.contact-info a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: .9rem;
+    border-bottom: 1px solid transparent;
+    transition: border 0.3s;
+}
+
+.contact-info a:hover {
+    border-bottom: 1px solid var(--primary-color);
+}
+.center-links a:hover 
+{
+    color: #1e3a8a;            
+    transform: scale(1.1);      
+}
+/* Container */
+.container {
+    max-width: 850px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+
+.center-links
+ a {
+    text-decoration: none;     
+    color: #4f46e5;             
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;  
+}
+
+section {
+    background: var(--white);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--dark-bg);
+    border-left: 5px solid var(--primary-color);
+    padding-left: 15px;
+    margin-top: 0;
+}
+
+/* Experience Entries */
+.entry {
+    margin-bottom: 2rem;
+}
+
+.entry-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    color: var(--dark-bg);
+    margin-bottom: 0.5rem;
+}
+
+.date {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* Skills Tags */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: #e2e8f0;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 3rem 0;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .entry-header {
+        flex-direction: column;
+    }
+}
+
